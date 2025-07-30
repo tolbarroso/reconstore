@@ -103,24 +103,23 @@ export const ProductsSection = () => {
         </div>
 
         {selectedProducts.length > 0 && (
-  <div className="text-center mt-16 space-y-4">
-    <Button
-      onClick={handleWhatsAppCheckout}
-      variant="whatsapp"
-      size="lg"
-      className="px-10 py-4 text-lg"
-    >
-      Comprar Produtos Selecionados ({selectedProducts.length})
-    </Button>
-
-    <button
-      onClick={() => setSelectedProducts([])}
-      className="text-sm text-muted-foreground hover:underline transition-all"
-    >
-      Cancelar minhas compras
-    </button>
-  </div>
-)}
+          <div className="text-center mt-16">
+            <Button
+              onClick={handleWhatsAppCheckout}
+              variant="whatsapp"
+              size="lg"
+              className="px-10 py-4 text-lg"
+            >
+              Comprar Produtos Selecionados ({selectedProducts.length})
+            </Button>
+            <button
+              onClick={() => setSelectedProducts([])}
+              className="text-sm text-muted-foreground hover:underline transition-all"
+            >
+              Cancelar minhas compras
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
