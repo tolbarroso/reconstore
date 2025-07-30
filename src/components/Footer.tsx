@@ -21,10 +21,10 @@ export const Footer = () => {
              </div>
              <h3 className="font-brand text-2xl font-bold mb-4"></h3>
             <p className="font-body text-primary-foreground/80 leading-relaxed">
-              Catedral da Reconciliação | IECB
-Venha como está e seja reconciliado 🤍
-• Cultos: Quarta (20h) e Domingo (08h, 10h, 16h e 18h)
-• Endereço: R. Alfredo Marcondes, 499 | Recife - PE
+              Catedral da Reconciliação | IECB<br />
+              Venha como está e seja reconciliado 🤍<br />
+              • Cultos: Quarta (20h) e Domingo (08h, 10h, 16h e 18h)<br />
+              • Endereço: R. Alfredo Marcondes, 499 | Recife - PE
             </p>
           </div>
 
