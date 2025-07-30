@@ -103,7 +103,7 @@ export const ProductsSection = () => {
         </div>
 
         {selectedProducts.length > 0 && (
-          <div className="text-center mt-16 space-y-3">
+          <div className="text-center mt-16 flex flex-col items-center space-y-3">
             <Button
               onClick={handleWhatsAppCheckout}
               variant="whatsapp"
