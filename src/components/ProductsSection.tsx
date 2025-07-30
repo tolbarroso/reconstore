@@ -7,6 +7,7 @@ import shirt3 from '@/assets/shirt-3.jpg';
 import shirt4 from '@/assets/shirt-4.jpg';
 import shirt5 from '@/assets/shirt-5.jpg';
 import shirt6 from '@/assets/shirt-6.jpg';
+import shirt7 from '@/assets/shirt-7.jpg';
 
 const products = [
   {
@@ -49,6 +50,13 @@ const products = [
     name: "Camiseta EuSouKids Incríveis da Fé",
     description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
     image: shirt6,
+    price: "R$ 39,90"
+  },
+  {
+    id: 7,
+    name: "Camiseta Continua a me Amar",
+    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
+    image: shirt7,
     price: "R$ 39,90"
   }
 ];
