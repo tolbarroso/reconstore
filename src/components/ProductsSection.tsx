@@ -114,7 +114,7 @@ export const ProductsSection = () => {
             </Button>
             <button
               onClick={() => setSelectedProducts([])}
-              className="w-full text-sm text-muted-foreground hover:text-foreground hover:underline transition-all"
+              className="text-sm text-gray-500 hover:text-gray-700 hover:underline transition"
             >
               Cancelar minhas compras
             </button>
