@@ -103,7 +103,7 @@ export const ProductsSection = () => {
         </div>
 
         {selectedProducts.length > 0 && (
-          <div className="text-center mt-16">
+          <div className="text-center mt-16 space-y-3">
             <Button
               onClick={handleWhatsAppCheckout}
               variant="whatsapp"
@@ -114,7 +114,7 @@ export const ProductsSection = () => {
             </Button>
             <button
               onClick={() => setSelectedProducts([])}
-              className="text-sm text-gray-500 hover:text-gray-700 hover:underline transition"
+              className="text-sm text-accent border border-accent bg-white px-4 py-2 rounded-md hover:bg-accent hover:text-white transition"
             >
               Cancelar minhas compras
             </button>
