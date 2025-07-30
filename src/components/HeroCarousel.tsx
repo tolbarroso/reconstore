@@ -1,30 +1,32 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroBanner1 from '@/assets/hero-banner-1.jpg';
+import heroBanner1 from '@/assets/hero-banner-1.png';
+import heroBanner2 from '@/assets/hero-banner-2.jpg';
+import heroBanner3 from '@/assets/hero-banner-3.jpg';
 import reconLogo from '@/assets/logoRecon.png';
 
 const heroSlides = [
   {
     id: 1,
     image: heroBanner1,
-    title: "RECON",
-    subtitle: "Moda Cristã com Propósito",
-    description: "Vista sua fé com estilo e identidade. Cada peça conta uma história de esperança e transformação."
+    title: "Recon Store",
+    subtitle: "Loja virtual da Catedral da Reconciliação",
+    description: "Aqui você encontrará produtos dos diversos ministérios da igreja."
   },
   {
     id: 2,
-    image: heroBanner1,
-    title: "RECON",
-    subtitle: "Fé em Movimento",
-    description: "Designs únicos que expressam valores eternos no seu dia a dia."
+    image: heroBanner2,
+    title: "Recon Store",
+    subtitle: "Loja virtual da Catedral da Reconciliação",
+    description: "Aqui você encontrará produtos dos diversos ministérios da igreja."
   },
   {
     id: 3,
-    image: heroBanner1,
-    title: "RECON",
-    subtitle: "Identidade Cristã",
-    description: "Conecte sua fé ao seu estilo pessoal com nossa linha exclusiva."
+    image: heroBanner3,
+    title: "Recon Store",
+    subtitle: "Loja virtual da Catedral da Reconciliação",
+    description: "Aqui você encontrará produtos dos diversos ministérios da igreja."
   }
 ];
 
