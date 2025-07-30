@@ -2,45 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Revest Brand Design System - Moda Cristã com Propósito */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
 @layer base {
   :root {
-    /* Revest Brand Colors */
-    --background: 41 47% 97%; /* #F8F6F1 - base neutra */
-    --foreground: 0 0% 10%; /* #1A1A1A - preto sóbrio */
+    /* Recon Brand Colors */
+    --background: 210 100% 98%; /* azul claro */
+    --foreground: 218 28% 15%; /* azul escuro */
 
-    --card: 41 47% 97%;
-    --card-foreground: 0 0% 10%;
+    --card: 210 100% 98%;
+    --card-foreground: 218 28% 15%;
 
-    --popover: 41 47% 97%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 210 100% 98%;
+    --popover-foreground: 218 28% 15%;
 
-    --primary: 0 0% 10%; /* #1A1A1A - preto sóbrio principal */
-    --primary-foreground: 41 47% 97%;
+    --primary: 218 28% 15%; /* azul escuro */
+    --primary-foreground: 210 100% 98%;
 
-    --secondary: 30 20% 75%; /* #D6C6B9 - tom terroso claro */
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 147 50% 50%; /* verde médio */
+    --secondary-foreground: 210 100% 98%;
 
-    --muted: 30 15% 65%; /* #8A7665 - tom terroso médio */
-    --muted-foreground: 0 0% 10%;
+    --muted: 147 30% 35%; /* verde terroso */
+    --muted-foreground: 210 100% 98%;
 
-    --accent: 45 45% 60%; /* #CBB26A - dourado queimado */
-    --accent-foreground: 0 0% 10%;
+    --accent: 207 85% 40%; /* azul médio */
+    --accent-foreground: 210 100% 98%;
 
-    --destructive: 0 55% 35%; /* #8B2C2C - vermelho escuro */
-    --destructive-foreground: 41 47% 97%;
+    --destructive: 3 60% 45%; /* vermelho Recon */
+    --destructive-foreground: 210 100% 98%;
 
-    --border: 30 20% 85%;
-    --input: 30 20% 85%;
-    --ring: 45 45% 60%;
+    --border: 210 50% 90%;
+    --input: 210 50% 90%;
+    --ring: 207 85% 40%;
 
     /* Brand Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--muted)));
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--secondary)));
-    --gradient-overlay: linear-gradient(rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.6));
+    --gradient-overlay: linear-gradient(rgba(20, 45, 70, 0.4), rgba(20, 45, 70, 0.6));
 
     /* Shadows */
     --shadow-brand: 0 10px 30px -10px hsl(var(--muted) / 0.3);
@@ -52,59 +50,52 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 210 100% 98%;
+    --sidebar-foreground: 218 28% 15%;
+    --sidebar-primary: 218 28% 15%;
+    --sidebar-primary-foreground: 210 100% 98%;
+    --sidebar-accent: 210 90% 95%;
+    --sidebar-accent-foreground: 218 28% 15%;
+    --sidebar-border: 210 60% 85%;
+    --sidebar-ring: 207 85% 40%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 218 28% 10%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 218 28% 10%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 218 28% 10%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 218 28% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 147 35% 25%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 147 25% 20%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 207 60% 35%;
     --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 3 70% 35%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 218 28% 20%;
+    --input: 218 28% 20%;
+    --ring: 207 85% 40%;
+    --sidebar-background: 218 28% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 207 85% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 218 28% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 218 28% 15%;
+    --sidebar-ring: 207 85% 40%;
   }
 }
 
