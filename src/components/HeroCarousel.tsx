@@ -83,7 +83,7 @@ export const HeroCarousel = () => {
                  <h1 className="font-brand text-6xl md:text-8xl font-bold mb-4 tracking-wider">
                    {slide.title}
                  </h1>
-                <h2 className="font-brand text-2xl md:text-3xl mb-6 text-accent font-semibold">
+                <h2 className="font-brand text-2xl md:text-3xl mb-6 text-white/90 font-semibold">
                   {slide.subtitle}
                 </h2>
                 <p className="font-body text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
