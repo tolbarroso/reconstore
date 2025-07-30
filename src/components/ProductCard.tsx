@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Check } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -17,13 +17,16 @@ interface ProductCardProps {
 
 export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
   const [selectedSize, setSelectedSize] = useState('M');
+  const [added, setAdded] = useState(false);
 
   const handleAdd = () => {
     onSelect({ id: product.id, name: product.name, price: product.price, size: selectedSize });
+    setAdded(true);
+    setTimeout(() => setAdded(false), 3000);
   };
 
   return (
-    <div className="product-card group border rounded-xl overflow-hidden shadow-md">
+    <div className="product-card group border rounded-xl overflow-hidden shadow-md bg-white">
       <div className="relative overflow-hidden">
         <img
           src={product.image}
@@ -38,14 +41,14 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
           {product.name}
         </h3>
 
-        <p className="font-body text-muted-foreground mb-4 leading-relaxed">
+        <p className="font-body text-sm text-muted-foreground mb-4 leading-snug">
           {product.description}
         </p>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-foreground mb-1">Tamanho:</label>
+          <label className="block text-sm font-semibold text-foreground mb-1">Tamanho:</label>
           <select
-            className="w-full border rounded px-3 py-2 text-sm"
+            className="w-full border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent transition"
             value={selectedSize}
             onChange={(e) => setSelectedSize(e.target.value)}
           >
@@ -65,11 +68,22 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
 
           <Button
             onClick={handleAdd}
-            variant="default"
-            className="flex items-center gap-2"
+            variant={added ? 'outline' : 'default'}
+            className={`flex items-center gap-2 px-4 py-2 transition-all duration-300 ${
+              added ? 'bg-green-100 text-green-700 border border-green-500' : ''
+            }`}
           >
-            <ShoppingCart className="w-4 h-4" />
-            Adicionar
+            {added ? (
+              <>
+                <Check className="w-4 h-4" />
+                Adicionado
+              </>
+            ) : (
+              <>
+                <ShoppingCart className="w-4 h-4" />
+                Adicionar
+              </>
+            )}
           </Button>
         </div>
       </div>
