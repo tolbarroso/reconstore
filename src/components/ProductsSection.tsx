@@ -67,11 +67,7 @@ export const ProductsSection = () => {
   >([]);
 
   const handleSelect = (product: { id: number; name: string; price: string; size: string }) => {
-    setSelectedProducts((prev) => {
-      const exists = prev.find((p) => p.id === product.id && p.size === product.size);
-      if (exists) return prev;
-      return [...prev, product];
-    });
+    setSelectedProducts((prev) => [...prev, product]); // permite múltiplos iguais
   };
 
   const handleWhatsAppCheckout = () => {
@@ -102,7 +98,7 @@ export const ProductsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} onSelect={handleSelect} />
+            <ProductCard key={`${product.id}-${product.name}`} product={product} onSelect={handleSelect} />
           ))}
         </div>
 
@@ -114,7 +110,7 @@ export const ProductsSection = () => {
               size="lg"
               className="px-10 py-4 text-lg"
             >
-              Comprar Produtos Selecionados
+              Comprar Produtos Selecionados ({selectedProducts.length})
             </Button>
           </div>
         )}
