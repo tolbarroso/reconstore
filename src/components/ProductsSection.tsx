@@ -8,12 +8,18 @@ import VitralPF from '@/assets/VitralPF.jpeg';
 import VitralPT from '@/assets/VitralPT.jpeg';
 import EucaristiaBF from '@/assets/EucaristiaBF.jpeg';
 import EucaristiaBT from '@/assets/EucaristiaBT.jpeg';
-import BolsaPG from '@/assets/BolsaPG.jpeg';
+import BolsaGPF from '@/assets/bolsaGPF.png';
+import BolsaGPL from '@/assets/bolsaGPL.png';
+import BolsaPAP from '@/assets/bolsaPAP.png';
+import BolsaPAF from '@/assets/bolsaPAF.png';
+import BolsaGAF from '@/assets/bolsaGAF.png';
+import BolsaGAL from '@/assets/bolsaGAL.png';
+
 const products = [
   {
     id: 1,
     baseName: "Camiseta Básica - Vitral Recon",
-    description: "lorem ipsum",
+    description: "",
     category: "camisas",
     price: "R$ 70,00",
     variants: [
@@ -31,7 +37,7 @@ const products = [
   {
     id: 2,
     baseName: "Camiseta Oversized - Vitral Recon",
-    description: "Lorem ipsum",
+    description: "",
     category: "camisas",
     price: "R$ 110,00",
     variants: [
@@ -50,7 +56,7 @@ const products = [
   {
     id: 3,
     baseName: "Camiseta Básica - Eucaristia",
-    description: "Lorem ipsum",
+    description: "",
     category: "camisas",
     price: "R$ 70,00",
     variants: [
@@ -64,7 +70,7 @@ const products = [
   {
     id: 4,
     baseName: "Camiseta Oversized - Eucaristia",
-    description: "Lorem ipsum",
+    description: "",
     category: "camisas",
     price: "R$ 110,00",
     variants: [
@@ -94,44 +100,39 @@ const products = [
       },
     ],
   },*/
-  /*{
+  {
     id: 6,
     baseName: "Bolsa pequena - Recon",
-    description: "Lorem ipsum",
+    description: "",
     category: "acessorios",
     price: "R$ 79,90",
     variants: [
       {
-        name: "Bolsa pequena - Recon",
-        images: [placeHolder, placeHolder], // frente e costas
-        color: "#d9c3a0",
-      },
-      {
-        name: "Bolsa pequena - Recon",
-        images: [placeHolder, placeHolder], // frente e costas
-        color: "#000000",
+        name: "Bolsa pequena - Recon(Azul)",
+        images: [BolsaPAP, BolsaPAF], // frente e costas
+        color: "#99A2A7",
       },
     ],
   },
   {
     id: 7,
     baseName: "Bolsa grande - Recon",
-    description: "Lorem ipsum",
+    description: "",
     category: "acessorios",
     price: "R$ 99,90",
     variants: [
       {
         name: "Bolsa grande - Recon(Preta)",
-        images: [BolsaPG, BolsaPG], // frente e costas
-        color: "#d9c3a0",
-      },
-      {
-        name: "Bolsa grande - Recon",
-        images: [placeHolder, placeHolder], // frente e costas
+        images: [BolsaGPF, BolsaGPL], // frente e costas
         color: "#000000",
       },
+      {
+        name: "Bolsa grande - Recon(Azul)",
+        images: [BolsaGAF, BolsaGAL], // frente e costas
+        color: "#454C6E",
+      },
     ],
-  }*/
+  },
 ];
 
 export const ProductsSection = () => {
