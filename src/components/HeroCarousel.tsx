@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import heroBanner1 from '@/assets/hero-banner-1.png';
 import heroBanner2 from '@/assets/hero-banner-2.jpg';
 import heroBanner3 from '@/assets/hero-banner-3.jpg';
-import reconLogo from '@/assets/logoRecon.png';
+import reconLogo from '@/assets/icoRecon.ico';
 
 const heroSlides = [
   {
