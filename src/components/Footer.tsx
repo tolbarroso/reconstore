@@ -1,5 +1,5 @@
 import { Instagram, MessageCircle, Mail } from 'lucide-react';
-import logoRecon from '@/assets/icoRecon.ico';
+import logoRecon from '@/assets/logoRecon.png';
 
 export const Footer = () => {
   const handleWhatsApp = () => {
