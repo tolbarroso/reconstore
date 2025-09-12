@@ -1,87 +1,164 @@
 import { useState } from 'react';
 import { ProductCard } from './ProductCard';
 import { Button } from '@/components/ui/button';
-import shirt1 from '@/assets/shirt-1.jpg';
-import shirt2 from '@/assets/shirt-2.jpg';
-import shirt3 from '@/assets/shirt-3.jpg';
-import shirt4 from '@/assets/shirt-4.jpg';
-import shirt5 from '@/assets/shirt-5.jpg';
-import shirt6 from '@/assets/shirt-6.jpg';
-import shirt7 from '@/assets/shirt-7.jpg';
-
+import placeHolder from '@/assets/placeHolder.jpg';
+import VitralAF from '@/assets/VitralAF.jpeg';
+import VitralAT from '@/assets/VitralAT.jpeg';
+import VitralPF from '@/assets/VitralPF.jpeg';
+import VitralPT from '@/assets/VitralPT.jpeg';
+import EucaristiaBF from '@/assets/EucaristiaBF.jpeg';
+import EucaristiaBT from '@/assets/EucaristiaBT.jpeg';
+import BolsaPG from '@/assets/BolsaPG.jpeg';
 const products = [
   {
     id: 1,
-    name: "Camiseta CEB Institucional",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt1,
-    price: "R$ 39,90"
-  },
+    baseName: "Camiseta Básica - Vitral Recon",
+    description: "lorem ipsum",
+    category: "camisas",
+    price: "R$ 70,00",
+    variants: [
+      {
+        name: "Camiseta Básica - Vitral Recon (Areia)",
+        images: [VitralAF, VitralAT], 
+        color: "#d9c3a0",
+      },
+      {
+        name: "Camiseta Básica - Vitral Recon (Preta)",
+        images: [VitralPF, VitralPT], // <-- frente e costas
+        color: "#000000",
+      },]
+},
   {
     id: 2,
-    name: "Camiseta CEB 2Tm 3:16",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt2,
-    price: "R$ 59,90"
+    baseName: "Camiseta Oversized - Vitral Recon",
+    description: "Lorem ipsum",
+    category: "camisas",
+    price: "R$ 110,00",
+    variants: [
+      {
+        name: "Camiseta Oversized - Vitral Recon (Areia)",
+        images: [VitralAF, VitralAT], // frente e costas
+        color: "#d9c3a0",
+      },
+      {
+        name: "Camiseta Oversized - Vitral Recon (Preta)",
+        images: [VitralPF, VitralPT], // frente e costas
+        color: "#000000",
+      },
+    ],
   },
   {
     id: 3,
-    name: "Camiseta CEB Pássaro",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt3,
-    price: "R$ 44,90"
+    baseName: "Camiseta Básica - Eucaristia",
+    description: "Lorem ipsum",
+    category: "camisas",
+    price: "R$ 70,00",
+    variants: [
+      {
+        name: "Camiseta Básica - Eucaristia(Off-White)",
+        images: [EucaristiaBF, EucaristiaBT], // frente e costas
+        color: "#e0dfd8",
+      },
+    ],
   },
   {
     id: 4,
-    name: "Camiseta Vitral",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt4,
-    price: "R$ 79,90"
+    baseName: "Camiseta Oversized - Eucaristia",
+    description: "Lorem ipsum",
+    category: "camisas",
+    price: "R$ 110,00",
+    variants: [
+      {
+        name: "Camiseta Oversized - Eucaristia (Off-White)",
+        images: [EucaristiaBF, EucaristiaBT], // frente e costas
+        color: "#e0dfd8",
+      },
+    ],
   },
-  {
+  /*{
     id: 5,
-    name: "Camiseta Tudo se fez diferente",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt5,
-    price: "R$ 69,90"
-  },
-  {
+    baseName: "Camisa Esportiva - Recon",
+    description: "Lorem ipsum",
+    category: "camisas",
+    price: "R$ 70,00",
+    variants: [
+      {
+        name: "Camisa Esportiva - Recon",
+        images: [placeHolder, placeHolder], // frente e costas
+        color: "#d9c3a0",
+      },
+      {
+        name: "Camisa Esportiva - Recon",
+        images: [placeHolder, placeHolder], // frente e costas
+        color: "#000000",
+      },
+    ],
+  },*/
+  /*{
     id: 6,
-    name: "Camiseta EuSouKids Incríveis da Fé",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt6,
-    price: "R$ 39,90"
+    baseName: "Bolsa pequena - Recon",
+    description: "Lorem ipsum",
+    category: "acessorios",
+    price: "R$ 79,90",
+    variants: [
+      {
+        name: "Bolsa pequena - Recon",
+        images: [placeHolder, placeHolder], // frente e costas
+        color: "#d9c3a0",
+      },
+      {
+        name: "Bolsa pequena - Recon",
+        images: [placeHolder, placeHolder], // frente e costas
+        color: "#000000",
+      },
+    ],
   },
   {
     id: 7,
-    name: "Camiseta Continua a me Amar",
-    description: "Tecido premium 100% algodão para máximo conforto no seu dia a dia.",
-    image: shirt7,
-    price: "R$ 39,90"
-  }
+    baseName: "Bolsa grande - Recon",
+    description: "Lorem ipsum",
+    category: "acessorios",
+    price: "R$ 99,90",
+    variants: [
+      {
+        name: "Bolsa grande - Recon(Preta)",
+        images: [BolsaPG, BolsaPG], // frente e costas
+        color: "#d9c3a0",
+      },
+      {
+        name: "Bolsa grande - Recon",
+        images: [placeHolder, placeHolder], // frente e costas
+        color: "#000000",
+      },
+    ],
+  }*/
 ];
 
 export const ProductsSection = () => {
   const [selectedProducts, setSelectedProducts] = useState<
-    { id: number; name: string; price: string; size: string }[]
+    { id: number; baseName: string; price: string; size: string }[]
   >([]);
 
-  const handleSelect = (product: { id: number; name: string; price: string; size: string }) => {
-    setSelectedProducts((prev) => [...prev, product]); // permite múltiplos iguais
+  const handleSelect = (product: { id: number; baseName: string; price: string; size: string }) => {
+    setSelectedProducts((prev) => [...prev, product]);
   };
 
   const handleWhatsAppCheckout = () => {
     if (selectedProducts.length === 0) return;
 
     const productLines = selectedProducts.map(
-      (p, index) => `${index + 1}. ${p.name} - ${p.price} (Tamanho: ${p.size})`
+      (p, index) => `${index + 1}. ${p.baseName} - ${p.price} (Tamanho: ${p.size})`
     );
 
     const message = `Olá! Gostaria de comprar os seguintes produtos:\n\n${productLines.join('\n')}`;
-    const url = `https://wa.me/5581999097261?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/5581999014848?text=${encodeURIComponent(message)}`;
 
     window.open(url, '_blank');
   };
+
+  // 🔹 separando os produtos
+  const shirts = products.filter((p) => p.category === "camisas");
+  const accessories = products.filter((p) => p.category === "acessorios");
 
   return (
     <section className="products-section py-20 px-4 bg-background">
@@ -96,14 +173,51 @@ export const ProductsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <ProductCard key={`${product.id}-${product.name}`} product={product} onSelect={handleSelect} />
-          ))}
+        {/* 🔹 Sessão de Camisas */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-6 text-foreground">Camisas</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {shirts.map((product) => (
+              <ProductCard key={`${product.id}-${product.baseName}`} product={product} onSelect={handleSelect} />
+            ))}
+          </div>
         </div>
 
+        {/* 🔹 Sessão de Acessórios */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-6 text-foreground">Acessórios</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {accessories.map((product) => (
+              <ProductCard key={`${product.id}-${product.baseName}`} product={product} onSelect={handleSelect} />
+            ))}
+          </div>
+        </div>
+
+        {/* 🔹 Produtos selecionados */}
         {selectedProducts.length > 0 && (
-          <div className="text-center mt-16 flex flex-col items-center space-y-3">
+          <div className="mt-16 text-center flex flex-col items-center space-y-6">
+            <div className="bg-white border border-muted p-6 rounded-lg max-w-xl w-full text-left shadow-sm">
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Produtos Selecionados:</h3>
+              <ul className="space-y-2 text-sm md:text-base text-muted-foreground">
+                {selectedProducts.map((item, index) => (
+                  <li key={index} className="border-b border-muted pb-2 flex justify-between items-center">
+                    <span>
+                      {index + 1}. <strong>{item.baseName}</strong> — {item.price} (Tamanho: {item.size})
+                    </span>
+                    <button
+                      onClick={() =>
+                        setSelectedProducts(prev =>
+                          prev.filter((_, i) => i !== index)
+                        )
+                      }
+                      className="text-red-500 font-bold ml-4 hover:text-red-700 transition"
+                    >
+                      ×
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <Button
               onClick={handleWhatsAppCheckout}
               variant="whatsapp"
@@ -112,6 +226,7 @@ export const ProductsSection = () => {
             >
               Comprar Produtos Selecionados ({selectedProducts.length})
             </Button>
+
             <button
               onClick={() => setSelectedProducts([])}
               className="text-sm text-accent border border-accent bg-white px-4 py-2 rounded-md hover:bg-accent hover:text-white transition"
