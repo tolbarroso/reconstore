@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import heroBanner1 from '@/assets/hero-banner-1.png';
 import heroBanner2 from '@/assets/hero-banner-2.jpg';
 import heroBanner3 from '@/assets/hero-banner-3.jpg';
-import reconLogo from '@/assets/logoRecon.png';
+import reconLogo from '@/assets/IconeReconStore.png';
 
 const heroSlides = [
   {
@@ -12,21 +12,21 @@ const heroSlides = [
     image: heroBanner1,
     title: "Recon Store",
     subtitle: "Loja virtual da Catedral da Reconciliação",
-    description: "Aqui você encontrará produtos dos diversos ministérios da igreja."
+    description: "Aqui você encontrará diversos produtos da nossa igreja."
   },
   {
     id: 2,
     image: heroBanner2,
     title: "Recon Store",
     subtitle: "Loja virtual da Catedral da Reconciliação",
-    description: "Aqui você encontrará produtos dos diversos ministérios da igreja."
+    description: "Aqui você encontrará diversos produtos da nossa igreja."
   },
   {
     id: 3,
     image: heroBanner3,
     title: "Recon Store",
     subtitle: "Loja virtual da Catedral da Reconciliação",
-    description: "Aqui você encontrará produtos dos diversos ministérios da igreja."
+    description: "Aqui você encontrará diversos produtos da nossa igreja."
   }
 ];
 

@@ -31,20 +31,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-brand text-lg font-semibold mb-4">Contato</h4>
             <div className="space-y-3">
-              <button
-                onClick={handleWhatsApp}
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors"
-              >
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp
-              </button>
-              <a
-                href="mailto:recon@gmail.com"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-                recon@gmail.com
-              </a>
+              
               <a
                 href="https://instagram.com/parareconciliar"
                 target="_blank"
@@ -57,25 +44,12 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-brand text-lg font-semibold mb-4">Sobre</h4>
-            <div className="space-y-3">
-              <p className="font-body text-primary-foreground/80">
-                Nossa Missão
-              </p>
-              <p className="font-body text-primary-foreground/80">
-                Qualidade & Materiais
-              </p>
-              <p className="font-body text-primary-foreground/80">
-                Política de Trocas
-              </p>
-            </div>
-          </div>
+          
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="font-body text-primary-foreground/60">
-            © 2025 Loja Recon. Todos os direitos reservados. | Criado por Carol Barroso.
+            © 2025 Loja Recon. Todos os direitos reservados. | Criado por CB Branding.
           </p>
         </div>
       </div>

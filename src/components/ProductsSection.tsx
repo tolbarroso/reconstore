@@ -14,40 +14,41 @@ import BolsaPAP from '@/assets/bolsaPAP.png';
 import BolsaPAF from '@/assets/bolsaPAF.png';
 import BolsaGAF from '@/assets/bolsaGAF.png';
 import BolsaGAL from '@/assets/bolsaGAL.png';
-
+import GarrafaPFec from '@/assets/GarrafaPFec.png';
+import GarrafaPAber from '@/assets/GarrafaPAber.png';
 const products = [
   {
     id: 1,
-    baseName: "Camiseta Básica - Vitral Recon",
+    baseName: "Camiseta Básica - Vitral ",
     description: "",
     category: "camisas",
     price: "R$ 70,00",
     variants: [
       {
-        name: "Camiseta Básica - Vitral Recon (Areia)",
+        name: "Camiseta Básica - Vitral (Areia)",
         images: [VitralAF, VitralAT], 
         color: "#d9c3a0",
       },
       {
-        name: "Camiseta Básica - Vitral Recon (Preta)",
+        name: "Camiseta Básica - Vitral (Preta)",
         images: [VitralPF, VitralPT], // <-- frente e costas
         color: "#000000",
       },]
 },
   {
     id: 2,
-    baseName: "Camiseta Oversized - Vitral Recon",
+    baseName: "Camiseta Oversized - Vitral ",
     description: "",
     category: "camisas",
     price: "R$ 110,00",
     variants: [
       {
-        name: "Camiseta Oversized - Vitral Recon (Areia)",
+        name: "Camiseta Oversized - Vitral (Areia)",
         images: [VitralAF, VitralAT], // frente e costas
         color: "#d9c3a0",
       },
       {
-        name: "Camiseta Oversized - Vitral Recon (Preta)",
+        name: "Camiseta Oversized - Vitral (Preta)",
         images: [VitralPF, VitralPT], // frente e costas
         color: "#000000",
       },
@@ -75,7 +76,7 @@ const products = [
     price: "R$ 110,00",
     variants: [
       {
-        name: "Camiseta Oversized - Eucaristia (Off-White)",
+        name: "Camiseta Oversized - Eucaristia  (Off-White)",
         images: [EucaristiaBF, EucaristiaBT], // frente e costas
         color: "#e0dfd8",
       },
@@ -102,13 +103,13 @@ const products = [
   },*/
   {
     id: 6,
-    baseName: "Bolsa pequena - Recon",
+    baseName: "Bolsa pequena - ",
     description: "",
     category: "acessorios",
     price: "R$ 79,90",
     variants: [
       {
-        name: "Bolsa pequena - Recon(Azul)",
+        name: "Bolsa pequena (Azul)",
         images: [BolsaPAP, BolsaPAF], // frente e costas
         color: "#99A2A7",
       },
@@ -122,14 +123,28 @@ const products = [
     price: "R$ 99,90",
     variants: [
       {
-        name: "Bolsa grande - Recon(Preta)",
+        name: "Bolsa grande (Preta)",
         images: [BolsaGPF, BolsaGPL], // frente e costas
         color: "#000000",
       },
       {
-        name: "Bolsa grande - Recon(Azul)",
+        name: "Bolsa grande (Azul)",
         images: [BolsaGAF, BolsaGAL], // frente e costas
         color: "#454C6E",
+      },
+    ],
+  },
+  {
+    id: 8,
+    baseName: "Garrafa Térmica",
+    description: "",
+    category: "acessorios",
+    price: "R$ 89,99",
+    variants: [
+      {
+        name: "Garrafa Térmica (Preta)",
+        images: [GarrafaPFec, GarrafaPAber], // frente e costas
+        color: "#000000",
       },
     ],
   },
