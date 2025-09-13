@@ -33,15 +33,15 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
   const [currentVariant, setCurrentVariant] = useState(product.variants[0]);
 
   const handleAdd = () => {
-    onSelect({
-      id: product.id,
-      baseName: currentVariant.name,
-      price: product.price,
-      size: selectedSize,
-    });
-    setAdded(true);
-    setTimeout(() => setAdded(false), 3000);
-  };
+  onSelect({
+    id: product.id,
+    baseName: currentVariant.name,
+    price: product.price,
+    size: product.category === "camisas" ? selectedSize : "Único",
+  });
+  setAdded(true);
+  setTimeout(() => setAdded(false), 3000);
+};
 
   return (
     <div className="product-card group border rounded-xl overflow-hidden shadow-md bg-white">
@@ -86,24 +86,26 @@ export const ProductCard = ({ product, onSelect }: ProductCardProps) => {
           ))}
         </div>
 
-        {/* Seletor de tamanho */}
-        <div className="mb-4">
-          <label className="block text-sm font-semibold text-foreground mb-1">
-            Tamanho:
-          </label>
-          <select
-            className="w-full border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent transition"
-            value={selectedSize}
-            onChange={(e) => setSelectedSize(e.target.value)}
-          >
-            <option value="PP">PP</option>
-            <option value="P">P</option>
-            <option value="M">M</option>
-            <option value="G">G</option>
-            <option value="GG">GG</option>
-            <option value="XG">XG</option>
-          </select>
-        </div>
+        {/* Seletor de tamanho - só aparece se for camisa */}
+{product.category === "camisas" && (
+  <div className="mb-4">
+    <label className="block text-sm font-semibold text-foreground mb-1">
+      Tamanho:
+    </label>
+    <select
+      className="w-full border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent transition"
+      value={selectedSize}
+      onChange={(e) => setSelectedSize(e.target.value)}
+    >
+      <option value="PP">PP</option>
+      <option value="P">P</option>
+      <option value="M">M</option>
+      <option value="G">G</option>
+      <option value="GG">GG</option>
+      <option value="XG">XG</option>
+    </select>
+  </div>
+)}
 
         <div className="flex items-center justify-between">
           <span className="font-brand text-2xl font-bold text-accent">

@@ -4,10 +4,16 @@ import { Button } from '@/components/ui/button';
 import placeHolder from '@/assets/placeHolder.jpg';
 import VitralAF from '@/assets/VitralAF.jpeg';
 import VitralAT from '@/assets/VitralAT.jpeg';
+import overVitralAF from '@/assets/overVitralAF.png';
+import overVitralAT from '@/assets/overVitralAT.png';
 import VitralPF from '@/assets/VitralPF.jpeg';
 import VitralPT from '@/assets/VitralPT.jpeg';
+import overVitralPF from '@/assets/overVitralPF.png';
+import overVitralPT from '@/assets/overVitralPT.png';
 import EucaristiaBF from '@/assets/EucaristiaBF.jpeg';
 import EucaristiaBT from '@/assets/EucaristiaBT.jpeg';
+import overEucaristiaBF from '@/assets/overEucaristiaBF.png';
+import overEucaristiaBT from '@/assets/overEucaristiaBT.png';
 import BolsaGPF from '@/assets/bolsaGPF.png';
 import BolsaGPL from '@/assets/bolsaGPL.png';
 import BolsaPAP from '@/assets/bolsaPAP.png';
@@ -16,6 +22,10 @@ import BolsaGAF from '@/assets/bolsaGAF.png';
 import BolsaGAL from '@/assets/bolsaGAL.png';
 import GarrafaPFec from '@/assets/GarrafaPFec.png';
 import GarrafaPAber from '@/assets/GarrafaPAber.png';
+import GarrafaVFec from '@/assets/GarrafaVFec.png'
+import GarrafaVAbert from '@/assets/GarrafaVAber.png'
+import ECruzA from "@/assets/ECruzAF.png"
+import ECuidarVF from "@/assets/ECuidarVF.png"
 const products = [
   {
     id: 1,
@@ -44,12 +54,12 @@ const products = [
     variants: [
       {
         name: "Camiseta Oversized - Vitral (Areia)",
-        images: [VitralAF, VitralAT], // frente e costas
+        images: [overVitralAF, overVitralAT], // frente e costas
         color: "#d9c3a0",
       },
       {
         name: "Camiseta Oversized - Vitral (Preta)",
-        images: [VitralPF, VitralPT], // frente e costas
+        images: [overVitralPF, overVitralPT], // frente e costas
         color: "#000000",
       },
     ],
@@ -62,7 +72,7 @@ const products = [
     price: "R$ 70,00",
     variants: [
       {
-        name: "Camiseta Básica - Eucaristia(Off-White)",
+        name: "Camiseta Básica - Eucaristia (Off-White)",
         images: [EucaristiaBF, EucaristiaBT], // frente e costas
         color: "#e0dfd8",
       },
@@ -76,35 +86,44 @@ const products = [
     price: "R$ 110,00",
     variants: [
       {
-        name: "Camiseta Oversized - Eucaristia  (Off-White)",
-        images: [EucaristiaBF, EucaristiaBT], // frente e costas
+        name: "Camiseta Oversized - Eucaristia (Off-White)",
+        images: [overEucaristiaBF, overEucaristiaBT], // frente e costas
         color: "#e0dfd8",
       },
     ],
   },
-  /*{
+  {
     id: 5,
-    baseName: "Camisa Esportiva - Recon",
-    description: "Lorem ipsum",
+    baseName: "Camisa Esportiva",
+    description: "",
     category: "camisas",
     price: "R$ 70,00",
     variants: [
       {
-        name: "Camisa Esportiva - Recon",
-        images: [placeHolder, placeHolder], // frente e costas
-        color: "#d9c3a0",
-      },
-      {
-        name: "Camisa Esportiva - Recon",
-        images: [placeHolder, placeHolder], // frente e costas
-        color: "#000000",
+        name: "Camisa Esportiva - Cruz (Azul)",
+        images: [ECruzA, ECruzA], // frente e costas
+        color: "#0c1f84",
       },
     ],
-  },*/
+  },
+  {
+    id: 9,
+    baseName: "Camisa Esportiva",
+    description: "",
+    category: "camisas",
+    price: "R$ 70,00",
+    variants: [
+      {
+        name: "Camisa Esportiva - Cuidar (Verde)",
+        images: [ECuidarVF, ECuidarVF], // frente e costas
+        color: "#012b31",
+      },
+    ],
+  },
   {
     id: 6,
     baseName: "Bolsa pequena - ",
-    description: "",
+    description: "Uma bolsa pequena e prática, ideal para carregar seus itens essenciais com medidas de  29 cm de largura, 18 cm de altura e 9 cm de profundidade",
     category: "acessorios",
     price: "R$ 79,90",
     variants: [
@@ -118,7 +137,7 @@ const products = [
   {
     id: 7,
     baseName: "Bolsa grande - Recon",
-    description: "",
+    description: "Uma bolsa grande e espaçosa, perfeita para o dia a dia com medidas de  50 cm de largura, 29 cm de altura e 20 cm de profundidade.",
     category: "acessorios",
     price: "R$ 99,90",
     variants: [
@@ -137,7 +156,7 @@ const products = [
   {
     id: 8,
     baseName: "Garrafa Térmica",
-    description: "",
+    description: "Uma garrafa térmica elegante de 800ml, com 2 bicos e uma alça",
     category: "acessorios",
     price: "R$ 89,99",
     variants: [
@@ -145,6 +164,11 @@ const products = [
         name: "Garrafa Térmica (Preta)",
         images: [GarrafaPFec, GarrafaPAber], // frente e costas
         color: "#000000",
+      },
+      {
+        name: "Garrafa Térmica (Verde)",
+        images: [GarrafaVFec, GarrafaVAbert], // frente e costas
+        color: "#3c6348",
       },
     ],
   },
