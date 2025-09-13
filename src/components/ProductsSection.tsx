@@ -24,7 +24,7 @@ import GarrafaPFec from '@/assets/GarrafaPFec.png';
 import GarrafaPAber from '@/assets/GarrafaPAber.png';
 import GarrafaVFec from '@/assets/GarrafaVFec.png'
 import GarrafaVAbert from '@/assets/GarrafaVAber.png'
-import ECruzAF from "@/assets/ECruzAF.png"
+import ECruzAF from "@/assets/EcruzAF.png"
 import ECuidarVF from "@/assets/ECuidarVF.png"
 const products = [
   {
