@@ -5,29 +5,15 @@ import heroBanner1 from '@/assets/hero-banner-1.png';
 import heroBanner2 from '@/assets/hero-banner-2.jpg';
 import heroBanner3 from '@/assets/hero-banner-3.jpg';
 import reconLogo from '@/assets/IconeReconStore.png';
-
+import reconFundo from '@/assets/fundoRecon.png';
 const heroSlides = [
   {
     id: 1,
-    image: heroBanner1,
+    image: reconFundo,
     title: "Recon Store",
     subtitle: "Loja virtual da Catedral da Reconciliação",
     description: "Aqui você encontrará diversos produtos da nossa igreja."
   },
-  {
-    id: 2,
-    image: heroBanner2,
-    title: "Recon Store",
-    subtitle: "Loja virtual da Catedral da Reconciliação",
-    description: "Aqui você encontrará diversos produtos da nossa igreja."
-  },
-  {
-    id: 3,
-    image: heroBanner3,
-    title: "Recon Store",
-    subtitle: "Loja virtual da Catedral da Reconciliação",
-    description: "Aqui você encontrará diversos produtos da nossa igreja."
-  }
 ];
 
 export const HeroCarousel = () => {
