@@ -2,10 +2,8 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from '@/components/ui/button'; // ajuste o caminho se seu Button estiver em outro lugar
 
-// ⚠️ Use caminhos relativos para evitar problemas no build da Vercel (case-sensitive)
-// Certifique-se de que os nomes dos arquivos batem 100% (maiúsculas/minúsculas e extensão)
-import reconLogo from "../../assets/IconeReconStore.png";
-import reconFundo from "../../assets/fundoRecon.png";
+import reconLogo from '@/assets/IconeReconStore.png';
+import reconFundo from '@/assets/fundoRecon.png';
 
 type Slide = {
   id: number;
