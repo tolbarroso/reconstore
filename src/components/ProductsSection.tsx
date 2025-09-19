@@ -26,6 +26,9 @@ import GarrafaVFec from '@/assets/GarrafaVFec.png'
 import GarrafaVAbert from '@/assets/GarrafaVAber.png'
 import ECruzA from "@/assets/ECruzAF.png"
 import ECuidarVF from "@/assets/ECuidarVF.png"
+import garrafaBA from "@/assets/garrafaBA.jpeg"
+import garrafaBF from "@/assets/garrafaBF.jpeg"
+
 const products = [
   {
     id: 1,
@@ -169,6 +172,11 @@ const products = [
         name: "Garrafa Térmica (Verde)",
         images: [GarrafaVFec, GarrafaVAbert], // frente e costas
         color: "#3c6348",
+      },
+      {
+        name: "Garrafa Térmica (Off-white)",
+        images: [garrafaBA, garrafaBF], // frente e costas
+        color: "#e0dfd8",
       },
     ],
   },
