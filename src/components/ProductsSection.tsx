@@ -28,6 +28,8 @@ import ECruzAF from "@/assets/EcruzAF.png"
 import ECuidarVF from "@/assets/ECuidarVF.png"
 import garrafaBA from "@/assets/garrafaBA.jpeg"
 import garrafaBF from "@/assets/garrafaBF.jpeg"
+import BolsaPP from "@/assets/bolsaPP.png"
+import BolsaPPL from "@/assets/bolsaPPL.png"
 
 const products = [
   {
@@ -134,6 +136,11 @@ const products = [
         name: "Bolsa pequena (Azul)",
         images: [BolsaPAP, BolsaPAF], // frente e costas
         color: "#99A2A7",
+      },
+      {
+        name: "Bolsa pequena (Preto)",
+        images: [BolsaPP, BolsaPPL], // frente e costas
+        color: "#000000",
       },
     ],
   },
