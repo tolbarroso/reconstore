@@ -5,7 +5,7 @@
 A **Recon Store** é uma landing page desenvolvida para apresentar a  coleção de roupas da Catedral da Reconciliação.  
 Unindo moda e valores, o site traduz identidade, estilo e fé de forma contemporânea e acessível.  
 
-🔗 Acesse: [https://recon-prototipo.vercel.app](https://recon-prototipo.vercel.app)
+🔗 Acesse: [https://reconstore.vercel.app](https://reconstore.vercel.app)
 
 ## ✨ Funcionalidades
 
@@ -30,8 +30,8 @@ Unindo moda e valores, o site traduz identidade, estilo e fé de forma contempor
 Clone este repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/tolbarroso/recon-prototipo.git
-cd recon-prototipo
+git clone https://github.com/tolbarroso/reconstore.git
+cd reconstore
 npm install
 npm run dev
 ```

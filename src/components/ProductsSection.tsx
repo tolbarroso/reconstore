@@ -24,7 +24,7 @@ import GarrafaPFec from '@/assets/GarrafaPFec.png';
 import GarrafaPAber from '@/assets/GarrafaPAber.png';
 import GarrafaVFec from '@/assets/GarrafaVFec.png'
 import GarrafaVAbert from '@/assets/GarrafaVAber.png'
-import ECruzA from "@/assets/ECruzAF.png"
+import ECruzAF from "@/assets/EcruzAF.png"
 import ECuidarVF from "@/assets/ECuidarVF.png"
 import garrafaBA from "@/assets/garrafaBA.jpeg"
 import garrafaBF from "@/assets/garrafaBF.jpeg"
@@ -104,7 +104,7 @@ const products = [
     variants: [
       {
         name: "Camisa Esportiva - Cruz (Azul)",
-        images: [ECruzA, ECruzA], // frente e costas
+        images: [ECruzAF, ECruzAF], // frente e costas
         color: "#0c1f84",
       },
     ],
