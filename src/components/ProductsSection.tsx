@@ -28,8 +28,8 @@ import ECruzAF from "@/assets/EcruzAF.png"
 import ECuidarVF from "@/assets/ECuidarVF.png"
 import garrafaBA from "@/assets/garrafaBA.jpeg"
 import garrafaBF from "@/assets/garrafaBF.jpeg"
-import BolsaPP from "@/assets/bolsaPP.png"
-import BolsaPPL from "@/assets/bolsaPPL.png"
+import BolsaPP from "@/assets/BolsaPP.png"
+import BolsaPPL from "@/assets/BolsaPPL.png"
 
 const products = [
   {
