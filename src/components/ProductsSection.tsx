@@ -43,11 +43,13 @@ const products = [
         name: "Camiseta Básica - Vitral (Areia)",
         images: [VitralAF, VitralAT], 
         color: "#d9c3a0",
+         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
       },
       {
         name: "Camiseta Básica - Vitral (Preta)",
         images: [VitralPF, VitralPT], // <-- frente e costas
         color: "#000000",
+         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
       },]
 },
   {
@@ -61,11 +63,13 @@ const products = [
         name: "Camiseta Oversized - Vitral (Areia)",
         images: [overVitralAF, overVitralAT], // frente e costas
         color: "#d9c3a0",
+        sizes: {PP: true, P: true, M: true, G: true, GG: true},
       },
       {
         name: "Camiseta Oversized - Vitral (Preta)",
         images: [overVitralPF, overVitralPT], // frente e costas
         color: "#000000",
+        sizes: {PP: true, P: true, M: true, G: true, GG: true},
       },
     ],
   },
@@ -80,6 +84,7 @@ const products = [
         name: "Camiseta Básica - Eucaristia (Off-White)",
         images: [EucaristiaBF, EucaristiaBT], // frente e costas
         color: "#e0dfd8",
+         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
       },
     ],
   },
@@ -94,6 +99,7 @@ const products = [
         name: "Camiseta Oversized - Eucaristia (Off-White)",
         images: [overEucaristiaBF, overEucaristiaBT], // frente e costas
         color: "#e0dfd8",
+        sizes: {PP: false, P: true, M: true, G: true, GG: true},
       },
     ],
   },
@@ -108,6 +114,7 @@ const products = [
         name: "Camisa Esportiva - Cruz (Azul)",
         images: [ECruzAF, ECruzAF], // frente e costas
         color: "#0c1f84",
+         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
       },
     ],
   },
@@ -122,12 +129,13 @@ const products = [
         name: "Camisa Esportiva - Cuidar (Verde)",
         images: [ECuidarVF, ECuidarVF], // frente e costas
         color: "#012b31",
+         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
       },
     ],
   },
   {
     id: 6,
-    baseName: "Bolsa pequena - ",
+    baseName: "Bolsa pequena (Preta) ",
     description: "Uma bolsa pequena e prática, ideal para carregar seus itens essenciais com medidas de  29 cm de largura, 18 cm de altura e 9 cm de profundidade",
     category: "acessorios",
     price: "R$ 79,90",
@@ -136,11 +144,13 @@ const products = [
         name: "Bolsa pequena (Azul)",
         images: [BolsaPAP, BolsaPAF], // frente e costas
         color: "#99A2A7",
+        inStock: true,
       },
       {
         name: "Bolsa pequena (Preto)",
         images: [BolsaPP, BolsaPPL], // frente e costas
         color: "#000000",
+        inStock: true,
       },
     ],
   },
@@ -155,11 +165,13 @@ const products = [
         name: "Bolsa grande (Preta)",
         images: [BolsaGPF, BolsaGPL], // frente e costas
         color: "#000000",
+        inStock: true,
       },
       {
         name: "Bolsa grande (Azul)",
         images: [BolsaGAF, BolsaGAL], // frente e costas
         color: "#454C6E",
+        inStock: false,
       },
     ],
   },
@@ -174,16 +186,19 @@ const products = [
         name: "Garrafa Térmica (Preta)",
         images: [GarrafaPFec, GarrafaPAber], // frente e costas
         color: "#000000",
+        inStock: true,
       },
       {
         name: "Garrafa Térmica (Verde)",
         images: [GarrafaVFec, GarrafaVAbert], // frente e costas
         color: "#3c6348",
+        inStock: true,
       },
       {
         name: "Garrafa Térmica (Off-white)",
         images: [garrafaBA, garrafaBF], // frente e costas
         color: "#e0dfd8",
+        inStock: true,
       },
     ],
   },
