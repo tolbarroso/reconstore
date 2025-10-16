@@ -114,7 +114,7 @@ const products = [
         name: "Camisa Esportiva - Cruz (Azul)",
         images: [ECruzAF, ECruzAF], // frente e costas
         color: "#0c1f84",
-         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
+         sizes: { P: true, M: true, G: true, GG: true},
       },
     ],
   },
@@ -129,7 +129,7 @@ const products = [
         name: "Camisa Esportiva - Cuidar (Verde)",
         images: [ECuidarVF, ECuidarVF], // frente e costas
         color: "#012b31",
-         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
+         sizes: { P: true, M: true, G: true, GG: true},
       },
     ],
   },
