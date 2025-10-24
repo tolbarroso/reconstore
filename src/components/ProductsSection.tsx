@@ -43,7 +43,7 @@ const products = [
         name: "Camiseta Básica - Vitral (Areia)",
         images: [VitralAF, VitralAT], 
         color: "#d9c3a0",
-         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
+         sizes: { P: false, M: true, G: true, GG: true, G1: true, G2: true },
       },
       {
         name: "Camiseta Básica - Vitral (Preta)",
@@ -63,13 +63,13 @@ const products = [
         name: "Camiseta Oversized - Vitral (Areia)",
         images: [overVitralAF, overVitralAT], // frente e costas
         color: "#d9c3a0",
-        sizes: {PP: true, P: true, M: true, G: true, GG: true},
+        sizes: {PP: false, P: true, M: true, G: true, GG: true},
       },
       {
         name: "Camiseta Oversized - Vitral (Preta)",
         images: [overVitralPF, overVitralPT], // frente e costas
         color: "#000000",
-        sizes: {PP: true, P: true, M: true, G: true, GG: true},
+        sizes: {PP: false, P: true, M: true, G: true, GG: true},
       },
     ],
   },
@@ -165,7 +165,7 @@ const products = [
         name: "Bolsa grande (Preta)",
         images: [BolsaGPF, BolsaGPL], // frente e costas
         color: "#000000",
-        inStock: true,
+        inStock: false,
       },
       {
         name: "Bolsa grande (Azul)",
@@ -198,7 +198,7 @@ const products = [
         name: "Garrafa Térmica (Off-white)",
         images: [garrafaBA, garrafaBF], // frente e costas
         color: "#e0dfd8",
-        inStock: true,
+        inStock: false,
       },
     ],
   },
