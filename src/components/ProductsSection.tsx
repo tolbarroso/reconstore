@@ -114,7 +114,7 @@ const products = [
         name: "Camisa Esportiva - Cruz (Azul)",
         images: [ECruzAF, ECruzAF], // frente e costas
         color: "#0c1f84",
-         sizes: { P: true, M: true, G: true, GG: true},
+         sizes: { P: true, M: true, G: true, GG: false},
       },
     ],
   },
@@ -143,7 +143,7 @@ const products = [
       {
         name: "Bolsa pequena (Azul)",
         images: [BolsaPAP, BolsaPAF], // frente e costas
-        color: "#99A2A7",
+        color: "#5aacd7ff",
         inStock: true,
       },
       {
