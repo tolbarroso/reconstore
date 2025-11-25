@@ -84,7 +84,7 @@ const products = [
         name: "Camiseta Básica - Eucaristia (Off-White)",
         images: [EucaristiaBF, EucaristiaBT], // frente e costas
         color: "#e0dfd8",
-         sizes: { P: true, M: true, G: true, GG: true, G1: true, G2: true },
+         sizes: { P: false, M: false, G: true, GG: true, G1: true, G2: true },
       },
     ],
   },
