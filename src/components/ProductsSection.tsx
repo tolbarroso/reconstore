@@ -101,7 +101,7 @@ const products = [
         name: "Camiseta Oversized - Eucaristia (Off-White)",
         images: [overEucaristiaBF, overEucaristiaBT], // frente e costas
         color: "#e0dfd8",
-        sizes: {PP: false, P: true, M: true, G: true, GG: true},
+        sizes: {PP: false, P: false, M: true, G: true, GG: true},
       },
     ],
   },
