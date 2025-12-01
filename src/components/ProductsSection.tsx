@@ -12,6 +12,8 @@ import overVitralPF from '@/assets/overVitralPF.png';
 import overVitralPT from '@/assets/overVitralPT.png';
 import EucaristiaBF from '@/assets/EucaristiaBF.jpeg';
 import EucaristiaBT from '@/assets/EucaristiaBT.jpeg';
+import AdventoBF from '@/assets/AdventoBF.png';
+import AdventoBT from '@/assets/AdventoBT.png';
 import overEucaristiaBF from '@/assets/overEucaristiaBF.png';
 import overEucaristiaBT from '@/assets/overEucaristiaBT.png';
 import BolsaGPF from '@/assets/bolsaGPF.png';
@@ -105,6 +107,21 @@ const products = [
   },
   {
     id: 5,
+    baseName: "Camiseta Básica - Advento",
+    description: "",
+    category: "camisas",
+    price: "R$ 70,00",
+    variants: [
+      {
+        name: "Camiseta Básica - Advento (Roxa)",
+        images: [AdventoBF, AdventoBT], // frente e costas
+        color: "#9909a0ff",
+         sizes: { PP: true, P: true, M: true, G: true, GG: true, G1: true, G2: true, G3: true, G4: true},
+      },
+    ],
+  },
+  {
+    id: 6,
     baseName: "Camisa Esportiva",
     description: "",
     category: "camisas",
@@ -119,7 +136,7 @@ const products = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     baseName: "Camisa Esportiva",
     description: "",
     category: "camisas",
@@ -134,7 +151,7 @@ const products = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     baseName: "Bolsa pequena (Preta) ",
     description: "Uma bolsa pequena e prática, ideal para carregar seus itens essenciais com medidas de  29 cm de largura, 18 cm de altura e 9 cm de profundidade",
     category: "acessorios",
@@ -155,7 +172,7 @@ const products = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     baseName: "Bolsa grande - Recon",
     description: "Uma bolsa grande e espaçosa, perfeita para o dia a dia com medidas de  50 cm de largura, 29 cm de altura e 20 cm de profundidade.",
     category: "acessorios",
@@ -176,7 +193,7 @@ const products = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     baseName: "Garrafa Térmica",
     description: "Uma garrafa térmica elegante de 800ml, com 2 bicos e uma alça",
     category: "acessorios",
